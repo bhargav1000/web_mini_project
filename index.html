@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+	<title>Form Fill Up</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+
+<body>
+	<center>
+    <h3>Invited Talks Info</h3>
+    <div class="container">
+        <label>Department:</label>
+         <select id="department" name="department">
+      <option value="cse">CSE</option>
+      <option value="ece">ECE</option>
+      <option value="ise">ISE</option>
+      <option value="eee">EEE</option>
+      <option value="tce">TCE</option>
+      <option value="mech">MECH</option>
+      <option value="civ">CIV</option>
+    </select><br><br>
+        
+        <label>Talk On:</label>
+        <input type="text" placeholder="Topic..."><br><br>
+        
+          <label>Resourse Person:</label>
+        <input type="text" placeholder="Speaker for the day..."><br><br>
+        
+          <label>Phone:</label>
+        <input type="tel", placeholder="Phone">
+        <label>Date:</label>
+        <input type="date"><br><br>
+        <label>Email:</label>
+        <input type="email" placeholder="abc@domain.com">
+        <br><br>
+        <label>Targer Audience:</label>
+        <label>Students</label>
+        <input type="radio" value="students">
+        <label>Teachers</label>        
+        <input type="radio" value="teachers">
+        <label>Both</label>
+        <input type="radio" value="Both"><br><br>
+
+         <label>Year:</label>
+         <select id="year" name="year">
+      <option value="1">1st Year</option>
+      <option value="2">2nd Year</option>
+      <option value="3">3rd Year</option>
+      <option value="4">4th Year</option>
+        </select><br><br>
+        
+    <label>Brief Description of the talk:</label><br>
+        <textarea id="description"> </textarea>
+        <br><br>
+      <label>PO's:</label><br>
+        <textarea id="pos"> </textarea>
+        <br><br>
+          <label>CO's:</label><br>
+        <textarea id="cos"> </textarea>
+        <br><br>
+         <button type="button" id="upload"><b>Upload event photos</b></button><br>
+         <button type="button" id="save"><b>Submit</b></button>
+     </center>
+    </div>
+</body>

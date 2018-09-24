@@ -1,0 +1,96 @@
+body {
+	background-image: url("congruent_pentagon.png");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+div{
+	margin-top: -1%;
+	margin-left: 25%;
+	text-align: left;
+	font-size: 95%;
+	padding-left: 2px;
+	box-shadow: 2px 2px 2px green;
+	font-family: Calibri;
+}
+
+.container {
+    border: 2px solid white;
+    border-radius: 25px;
+    background: white;
+    background-clip: border-box;
+    margin-left: 27%;
+    margin-right: 27%;
+    margin-bottom: 5%
+    margin-top: 5%;
+    padding-left: 10%;
+    padding-top-bottom: 5%;    
+}
+
+h3 {
+	margin-top: 0.5%;
+	font-size: 25px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+label {
+    display: inline-block;
+    text-align: left;
+    margin-right: 4px;    
+}
+
+input, select {
+	padding: 2px;
+	border: 2px solid rgb(176, 250, 146);
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 2px;  
+}
+
+input[type=radio] {
+	margin-right: 15px;
+	margin-left: -4px;
+}
+
+textarea {
+	padding: 2px;
+	border: 2px solid rgb(176, 250, 146);
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 2px;
+}
+
+#description, #pos, #cos {
+	width: 75%;
+	display: inline-block;
+}
+
+button {
+	padding: 10px;
+	border: 2px solid rgb(176, 250, 146);
+	background-color: rgba(255, 255, 255, 0.5);
+	font-size: 15px;
+	border-radius: 25px;
+	display: block;		
+}
+
+button:hover {
+	background-color: rgb(176, 250, 146);
+	-webkit-transition: 0.4s;
+	color: white;
+	box-shadow: 1px 1px 1px green;
+}
+
+button:active {
+	transform: translateY(4px);
+	-webkit-transition: 0.1s;
+}
+
+#upload {
+	margin-left: 20%;
+}
+
+#save {
+	margin-top: -1%;
+	margin-left: 30%;
+}
