@@ -68,8 +68,10 @@ textarea {
 textarea:hover {
 	box-shadow: 1px 1px 1px green;
 }
+
 #description, #pos, #cos {
-	width: 81%;
+	width: 79%;
+	height: 75px;
 	display: inline-block;
 }
 
@@ -95,11 +97,11 @@ button:active {
 
 #upload {
 	padding: 7px 15px;
-	margin-left: 20%;
+	margin-left: 19%;
 }
 
 #save {
 	padding: 5px 15px;
 	margin-top: -1%;
-	margin-left: 30%;
+	margin-left: 29%;
 }
