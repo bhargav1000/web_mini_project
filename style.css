@@ -8,9 +8,9 @@ body {
 
 div{
 	margin-top: -1%;
-	margin-left: 25%;
+	/*margin-left: 25%;*/
 	text-align: left;
-	font-size: 95%;
+	font-size: 15px;
 	padding-left: 2px;
 	box-shadow: 2px 2px 2px green;
 	font-family: Calibri;
@@ -74,20 +74,11 @@ textarea:hover {
 	height: 75px;
 	display: inline-block;
 }
-
 button {
 	border: 2px solid rgb(176, 250, 146);
 	background-color: rgba(255, 255, 255, 0.5);
 	font-size: 15px;
-	border-radius: 25px;
 	display: block;		
-}
-
-button:hover {
-	background-color: rgb(176, 250, 146);
-	-webkit-transition: 0.4s;
-	color: white;
-	box-shadow: 1px 1px 1px green;
 }
 
 button:active {
@@ -97,11 +88,39 @@ button:active {
 
 #upload {
 	padding: 7px 15px;
-	margin-left: 19%;
+	margin-left: 18%;
+	border-radius: 10px;
+}
+
+#upload:hover {
+	box-shadow: 1px 1px 1px green;
 }
 
 #save {
 	padding: 5px 15px;
 	margin-top: -1%;
 	margin-left: 29%;
+	border-radius: 25px;
+}
+
+#save:hover {
+	background-color: rgb(176, 250, 146);
+	-webkit-transition: 0.4s;
+	color: white;
+	box-shadow: 1px 1px 1px green;
+}
+
+
+.footer {
+   width: auto;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 1px;
+   font-size: 100%;
+   font-family: arial; 
+   background: #457592;
+   border-radius: 15px;
+   box-shadow: 3px 3px 1px orange;
+   color: white;
+   text-align: center;
 }
