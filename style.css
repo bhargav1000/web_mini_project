@@ -1,5 +1,6 @@
 body {
-	background-image: url("congruent_pentagon.png");
+	background-image: url("./images/neonbrand-666226-unsplash.jpg");
+	background-size: 100% 100%;
 }
 
 * {
@@ -34,6 +35,7 @@ h3 {
 	margin-top: 0.5%;
 	font-size: 25px;
 	font-family: 'Open Sans', sans-serif;
+	color: white;
 }
 
 label {
