@@ -122,7 +122,7 @@ button:active {
    font-family: arial; 
    background: #457592;
    border-radius: 15px;
-   box-shadow: 3px 3px 1px orange;
+   box-shadow: 2px 2px 1px orange;
    color: white;
    text-align: center;
 }
