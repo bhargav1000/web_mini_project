@@ -10,6 +10,7 @@
 	<center>
     <h3>Invited Talks Info</h3>
     <div class="container">
+    	<form action="form_handle.php" method="post">
     	<br>
         <label>Department:</label>
          <select id="department" name="department">
@@ -23,13 +24,13 @@
     </select><br><br>
         
         <label>Talk On:</label>
-        <input type="text" placeholder="Topic..."><br><br>
+        <input type="text" name="topic" placeholder="Topic..."><br><br>
         
           <label>Resourse Person:</label>
-        <input type="text" placeholder="Speaker for the day..."><br><br>
+        <input type="text" name="person" placeholder="Speaker for the day..."><br><br>
         
           <label>Phone:</label>
-        <input type="tel", placeholder="Phone"><br><br>
+        <input type="tel" name="phone" placeholder="Phone"><br><br>
         <label>Date:</label>
         <input type="date"><br><br>
         <label>Email:</label>
@@ -45,6 +46,7 @@
 
          <label>Year:</label>
          <select id="year" name="year">
+      <option value="0">--None--</option>
       <option value="1">1st Year</option>
       <option value="2">2nd Year</option>
       <option value="3">3rd Year</option>
@@ -61,8 +63,10 @@
         <textarea rows="4" cols="50" placeholder="Enter Course Outcomes Covered..." id="cos"> </textarea>
         <br><br>
          <button type="button" id="upload"><b>Upload event photos</b></button><br>
-         <button type="button" id="save"><b><span>Submit </span></b></button><br>
+         <button type="submit" id="save"><b><span>Submit </span></b></button><br>
+         </form>
      </center>
+
     </div>
     <br><br><br><br>
 	<div class="footer">
