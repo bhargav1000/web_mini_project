@@ -5,14 +5,6 @@
 	<link rel="icon" href="./images/logo-5527329e306f832982eb5b10b8325a606bc2058ae61b4aa5705c8c2d4e436212.ico" type="x-image/icon">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<meta charset="utf-8">
-	<script type="text/javascript">
-    function stopEnterKey(evt) {
-        var evt = (evt) ? evt : ((event) ? event : null);
-        var node = (evt.target) ? evt.target : ((evt.srcElement) ? evt.srcElement : null);
-        if ((evt.keyCode == 13) && (node.type == "text")) { return false; }
-    }
-    document.onkeypress = stopEnterKey;
-</script>
 </head>
 
 <body>
@@ -43,7 +35,7 @@
         <label>Date:</label>
         <input type="date" id="date1"><br><br>
         <label>Email:</label>
-        <input type="email" placeholder="abc@domain.com" id="email">
+        <input type="email" name="emailof" placeholder="abc@domain.com" id="emailof">
         <br><br>
         <label>Targer Audience:</label>
         <label>Students</label>
@@ -63,13 +55,13 @@
         </select><br><br>
         
     <label>Brief Description of the talk:</label><br>
-        <input style="height:100px;width:80%;" placeholder="Enter a description in about 200 words..." name="description"> 
+        <textarea placeholder="Enter a description in about 200 words..." name="desc"></textarea> 
         <br><br>
-      <label>PO's:</label><br>
-        <input style="height:100px;width:80%;" placeholder="Enter Program Outcomes Covered..." name="pos"> 
+      <label>PO's Covered:</label><br>
+        <textarea placeholder="Enter Program Outcomes Covered..." name="posc"></textarea> 
         <br><br>
-          <label>CO's:</label><br>
-        <input style="height:100px;width:80%;" placeholder="Enter Course Outcomes Covered..." name="cos"> 
+          <label>CO's Covered:</label><br>
+        <textarea placeholder="Enter Course Outcomes Covered..." name="cosc"></textarea> 
         <br><br>
          <button type="button" id="upload"><b>Upload event photos</b></button><br>
          <button type="submit" id="save"><b><span>Submit </span></b></button><br>

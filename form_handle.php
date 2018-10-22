@@ -1,27 +1,17 @@
 <html>
-<body>
-<?php
-// define variables and set to empty values
-$name = $email = $gender = $comment = $website = "";
-
-
-  $dept = test_input($_POST["department"]);
-  $topic = test_input($_POST["topic"]);
-  $person = test_input($_POST["person"]);
-  $description = test_input($_POST["description"]);
-
-
-function test_input($data) {
-  $data = trim($data);
-  $data = stripslashes($data);
-  $data = htmlspecialchars($data);
-  return $data;
-}
-echo "Department: ".$description;
-echo "Talk On: ".$topic;
-echo "Resource Person: ".$person;
-echo "Phone: ".$phone;
-
-?>
-</body>
-</html>
+	<body>
+	<?php
+	echo "<h1>You have entered:</h1><br>";
+	echo $_POST['department']."<br>";
+	echo $_POST['topic']."<br>";
+	echo $_POST['person']."<br>";
+	echo $_POST['phone']."<br>";
+	echo $_POST['emailof']."<br>";
+	echo $_POST['audience']."<br>";
+	echo $_POST['year']."<br>";
+	echo $_POST['desc']."<br>";
+	echo $_POST['posc']."<br>";
+	echo $_POST['cosc']."<br>";
+	?>
+	</body>
+</html>	
