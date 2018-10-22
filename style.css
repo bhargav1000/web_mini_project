@@ -126,3 +126,7 @@ button:active {
    color: white;
    text-align: center;
 }
+
+.description, .pos, .cos {
+	padding: 2px;
+}
