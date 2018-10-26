@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<head>
+	<title>Form Fill Up</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<link rel="icon" href="./images/logo-5527329e306f832982eb5b10b8325a606bc2058ae61b4aa5705c8c2d4e436212.ico" type="x-image/icon">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<meta charset="utf-8">
+</head>
+
+<body>
+	<center>
+    <h3>Invited Talks Info</h3>
+    <div class="container">
+    	<form action="form_handle.php" method="post">
+    	<br>
+        <label>Department:</label>
+         <select id="department" name="department">
+      <option value="cse">CSE</option>
+      <option value="ece">ECE</option>
+      <option value="ise">ISE</option>
+      <option value="eee">EEE</option>
+      <option value="tce">TCE</option>
+      <option value="mech">MECH</option>
+      <option value="civ">CIV</option>
+    </select><br><br>
+        
+        <label>Talk On:</label>
+        <input type="text" name="topic" id="topic" placeholder="Topic..."><br><br>
+        
+          <label>Resourse Person:</label>
+        <input type="text" name="person" id="person" placeholder="Speaker for the day..."><br><br>
+        
+          <label>Phone:</label>
+        <input type="tel" name="phone" id="phone" placeholder="Phone"><br><br>
+        <label>Date:</label>
+        <input type="date" name="dateof"><br><br>
+        <label>Email:</label>
+        <input type="email" name="emailof" placeholder="abc@domain.com" id="emailof">
+        <br><br>
+        <label>Targer Audience:</label>
+        <label>Students</label>
+        <input type="radio" name="audience" id="audience" class="radio-toolbar" value="students">
+        <label>Teachers</label>        
+        <input type="radio" name="audience" id="audience" class="radio-toolbar" value="teachers">
+        <label>Both</label>
+        <input type="radio" name="audience" id="audience" class="radio-toolbar" value="both"><br><br>
+
+         <label>Year:</label>
+         <select id="year" name="year">
+      <option value="0">--None--</option>
+      <option value="1">1st Year</option>
+      <option value="2">2nd Year</option>
+      <option value="3">3rd Year</option>
+      <option value="4">4th Year</option>
+        </select><br><br>
+        
+    <label>Brief Description of the talk:</label><br>
+        <textarea placeholder="Enter a description in about 200 words..." name="desc"></textarea> 
+        <br><br>
+      <label>PO's Covered:</label><br>
+        <textarea placeholder="Enter Program Outcomes Covered..." name="posc"></textarea> 
+        <br><br>
+          <label>CO's Covered:</label><br>
+        <textarea placeholder="Enter Course Outcomes Covered..." name="cosc"></textarea> 
+        <br><br>
+         <button type="button" id="upload"><b>Upload event photos</b></button><br>
+         <button type="submit" id="save"><b><span>Submit </span></b></button><br>
+         </form>
+     </center>
+
+    </div>
+    <br><br><br><br>
+	<div class="footer">
+    	<footer>
+    		<p><strong> Copyright© 2018.<br>Created by Bhargav Sagiraju and Aditya Subraya Hegde.</strong></p>
+		</footer>
+	</div>
+
+</body>
+</html>

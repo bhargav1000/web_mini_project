@@ -1,0 +1,42 @@
+body {
+	background-image: url("./images/neonbrand-666226-unsplash.jpg");
+	background-size: auto;
+}
+
+h1 {
+	color: white;
+	font-family: 'Open Sans', sans-serif; 
+}
+
+button {
+	border: solid white;
+	background-color: transparent;
+	font-size: 25px;
+	display: block;
+	color: white;		
+}
+
+button:hover {
+	background-color: white;
+	-webkit-transition: 0.4s;
+	color: blue;
+}
+
+button:active {
+	transform: translateY(2px);
+	-webkit-transition: 0.1s;
+}
+
+.footer {
+   width: auto;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 0.5px;
+   font-size: 100%;
+   font-family: arial; 
+   background: #457592;
+   border-radius: 15px;
+   box-shadow: 2px 2px 1px orange;
+   color: white;
+   text-align: center;
+}
