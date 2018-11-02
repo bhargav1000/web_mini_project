@@ -18,7 +18,7 @@ while($res=$result->fetch_assoc())
 {
 	echo $res['password'];
 }
-/*
+
 $sql="SELECT * FROM `event`";
 $result=$conn->query($sql);
 
@@ -58,6 +58,7 @@ if ($result->num_rows > 0)
 		echo $row["desc"]."<br>";
 		echo $row["posc"]."<br>";
 		echo $row["cosc"]."<br>";
+		echo $row["speaker_location"]."<br>";
 		array_push($a,$row['speaker_id']);
 	}
 }
@@ -65,7 +66,7 @@ else
 {
 	echo "Table is empty";
 }
-*/
+
 $conn->close();
 ?>
 </body>
