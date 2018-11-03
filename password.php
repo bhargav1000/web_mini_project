@@ -45,7 +45,7 @@ session_start();
 				echo '<input type="password" name="passcheck" id="passcheck" placeholder="Password"><br><br>';
 				echo '<input type="submit" id="submit">';
 				$id = isset($_POST['passcheck']) ? $_POST['passcheck'] : '';
-				$id=$id."@passwordverified";
+				$id="passwordverified@".$id;
 				#echo $id;
 				echo "</center>";
 					$servername='localhost';

@@ -47,7 +47,7 @@ session_start();
 						die("Connection failed: ".$conn->connect_error);
 
 					$user=$_POST['username'];
-					$user=$user."@userverified";
+					$user="userverified@".$user;
 					$sql="SELECT * FROM `user` WHERE username LIKE '$user'";
 					$result=$conn->query($sql);
 					if ($result->num_rows > 0)
