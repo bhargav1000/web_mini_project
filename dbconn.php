@@ -59,8 +59,10 @@ if ($result->num_rows > 0)
 		echo $row["posc"]."<br>";
 		echo $row["cosc"]."<br>";
 		echo $row["speaker_location"]."<br>";
+		$dateof=$row["dateof"];
 		array_push($a,$row['speaker_id']);
 	}
+	echo $dateof[6].$dateof[7].$dateof[8].$dateof[9];
 }
 else
 {

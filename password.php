@@ -5,7 +5,7 @@ session_start();
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Login</title>
+		<title>Password</title>
 		<link rel="stylesheet" href="home.css" type="text/css">
 		<link rel="icon" href="./images/logo-5527329e306f832982eb5b10b8325a606bc2058ae61b4aa5705c8c2d4e436212.ico" type="x-image/icon">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -32,7 +32,7 @@ session_start();
 			{
 				$location="window.location.href='login.php'";
 				echo "<center>";
-				echo "<br><br><br><br><br><br><br>";
+				echo "<br><br><br><br><br><br><br><br><br><br><br><br><br>";
 				echo "<h1>You are already logged in<br>(No point in logging you again is there?)</h1>";
 				header("Refresh: 1.5;URL=./dashboard.html");
 				echo "</center>";
@@ -42,9 +42,10 @@ session_start();
 				echo "<center>";
 				echo "<br><br><br><br><br><br><br>";
 				echo "<h1>Username found.<br>Enter password</h1><br>";
-				echo '<input type="password" name="passcheck" id="passcheck" placeholder="password"><br><br>';
+				echo '<input type="password" name="passcheck" id="passcheck" placeholder="Password"><br><br>';
 				echo '<input type="submit" id="submit">';
 				$id = isset($_POST['passcheck']) ? $_POST['passcheck'] : '';
+				$id=$id."@passwordverified";
 				#echo $id;
 				echo "</center>";
 					$servername='localhost';
@@ -88,4 +89,10 @@ session_start();
 		?>
 		</form>		
 	</body>
+	  <br><br><br><br><br><br><br><br><br><br>
+	<div class="footer">
+    	<footer>
+    		<p><strong> Copyright© 2018.<br>Created by Bhargav Sagiraju and Aditya Subraya Hegde.</strong></p>
+		</footer>
+	</div>
 </html>

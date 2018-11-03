@@ -1,3 +1,12 @@
+a {
+	color: white;
+	font-size: 100%;
+}
+
+a:hover {
+	color: blue;
+}
+
 body {
 	background-image: url("./images/neonbrand-666226-unsplash.jpg");
 	background-size: 100% 100%;
@@ -131,4 +140,5 @@ button:active {
 .description, .pos, .cos {
 	padding: 2px;
 }
+
 

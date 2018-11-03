@@ -17,13 +17,21 @@ session_start();
 		<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
 			<?php
 				error_reporting(0);
+				if($_SESSION["passw"]=="password_checked")
+				{
+					echo "<center>";
+					echo "<br><br><br><br><br><br><br>";
+					echo "<h1>You are already logged in<br>(No point in logging you again is there?)</h1>";
+					header("Refresh: 1;URL=./dashboard.html");
+					echo "</center>";
+				}
 				if($_SESSION["user"] == "user_found")
 				{
 					$location="window.location.href='login.php'";
 					echo "<center>";
 					echo "<br><br><br><br><br><br><br>";
-					echo "<h1>You are already logged in<br>(No point in logging you again is there?)</h1>";
-					echo "<a href='./dashboard.html' onclick=$location>Click here to go to the Dashboard</a>";
+					#echo "<h1>You are already logged in<br>(No point in logging you again is there?)</h1>";
+					header("Location: ./password.php");
 					echo "</center>";
 				}		
 				else
@@ -61,4 +69,10 @@ session_start();
 			</form>
 		</center>
 	</body>
+	  <br><br><br><br><br><br><br><br>
+	<div class="footer">
+    	<footer>
+    		<p><strong> Copyright© 2018.<br>Created by Bhargav Sagiraju and Aditya Subraya Hegde.</strong></p>
+		</footer>
+	</div>
 </html>

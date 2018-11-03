@@ -1,5 +1,5 @@
 body {
-	background-image: url("./images/neonbrand-666226-unsplash.jpg");
+	background-image: url("./images/liam-martens-680583-unsplash.jpg");
 	background-size: auto;
 }
 
@@ -74,7 +74,7 @@ input[type=submit]:active {
 
 a {
 	color: white;
-	font-size: 100%;
+	font-size: 150%;
 }
 
 a:hover {
@@ -86,3 +86,23 @@ select {
 	font-size: 150%;
 }
 
+table, td, tr {
+	border: 2px solid white;
+	width: 33%;
+	text-align: left;
+	border-collapse: collapse;
+	background-color: transparent;
+	color: white;
+	padding: 2px;
+}
+
+th { 
+	text-align: center; 
+	padding: 2px;
+	background-color: white;
+	color: blue; 
+}
+			
+table { 
+	margin: auto; 
+}
