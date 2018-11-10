@@ -106,6 +106,7 @@ session_start();
 			}
 			
 		?>
+		<button type=button name=print onClick="window.print()">Print</button><br>
 		<a href='dashboard.html'>Click here to back to the Dashboard</a>
 		</center>
 	</body>

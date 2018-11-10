@@ -48,6 +48,7 @@ session_start();
 
 					$user=$_POST['username'];
 					$user="userverified@".$user;
+					$user = filter_var($user, FILTER_SANITIZE_STRING);
 					$sql="SELECT * FROM `user` WHERE username LIKE '$user'";
 					$result=$conn->query($sql);
 					if ($result->num_rows > 0)
@@ -69,7 +70,7 @@ session_start();
 			</form>
 		</center>
 	</body>
-	  <br><br><br><br><br><br><br><br>
+	  <br><br><br><br><br><br><br><br><br>
 	<div class="footer">
     	<footer>
     		<p><strong> Copyright© 2018.<br>Created by Bhargav Sagiraju and Aditya Subraya Hegde.</strong></p>
