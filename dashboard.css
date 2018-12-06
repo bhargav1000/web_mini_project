@@ -16,8 +16,8 @@ div{
     background-clip: border-box;
     margin-left: 35%;
     margin-right: 35%;
-    margin-bottom: 5%;
-    margin-top: 7%;
+    margin-bottom: 7%;
+    margin-top: 5%;
     padding-left: 7.2%;
     padding-top-bottom: 20%;    
 }
@@ -36,7 +36,7 @@ h1 {
 #box-header {
 	color: green;
 	font-family: 'Open Sans', sans-serif;
-	margin-left: -25%; 
+	margin-left: -30%; 
 }
 
 input[type=text]:hover {
@@ -59,30 +59,30 @@ button {
 }
 
 #report {
-	border: solid white;
+	border: solid transparent;
 	background-color: transparent;
 	font-size: 25px;
 	display: block;
 	color: blue;
-	margin-left: -25%;		
+	margin-left: -30%;		
 }
 
 #formfill {
-	border: solid white;
+	border: solid transparent;
 	background-color: transparent;
 	font-size: 25px;
 	display: block;
 	color: green;
-	margin-left: -25%;		
+	margin-left: -30%;		
 }
 
 #logout {
-	border: solid white;
+	border: solid transparent;
 	background-color: transparent;
 	font-size: 25px;
 	display: block;
 	color: red;
-	margin-left: -25%;		
+	margin-left: -30%;		
 }
 
 /*button:hover {
@@ -102,6 +102,7 @@ button:active {
 	-webkit-transition: 0.4s;
 	color: white;
 	border-color:blue;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 #formfill:hover {
@@ -109,6 +110,7 @@ button:active {
 	-webkit-transition: 0.4s;
 	color: white;
 	border-color:green;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 #logout:hover {
@@ -116,6 +118,7 @@ button:active {
 	-webkit-transition: 0.4s;
 	color: white;
 	border-color:red;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .footer {
